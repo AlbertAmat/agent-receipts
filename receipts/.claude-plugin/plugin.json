@@ -1,0 +1,7 @@
+{
+  "name": "receipts",
+  "version": "0.1.0",
+  "description": "Make your coding agent show receipts: no 'done' without proof, no guessed APIs, no blind bug fixes.",
+  "license": "MIT",
+  "author": { "name": "effectustasi" }
+}
