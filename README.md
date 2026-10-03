@@ -1,6 +1,6 @@
 # receipts 🧾
 
-**English** · [Türkçe](README.tr.md) · *Your language? [Help translate](https://github.com/effectustasi/receipts/labels/translation)*
+**English** · [Türkçe](README.tr.md) · *Your language? [Help translate](https://github.com/effectustasi/agent-receipts/labels/translation)*
 
 **Your coding agent says "Done ✅". It never ran the code.**
 
@@ -38,14 +38,14 @@ or, when it can't check:
 **Claude Code**
 
 ```
-/plugin marketplace add effectustasi/receipts
+/plugin marketplace add effectustasi/agent-receipts
 /plugin install receipts@receipts
 ```
 
 **Any other agent** (Codex, Cursor, Copilot, Gemini CLI, OpenCode…)
 
 Copy the skill folders into your agent's skills directory, or paste the body of each `SKILL.md` into your `AGENTS.md` or rules file.
-Per-agent guides are welcome: pick your agent from the [`agent-support`](https://github.com/effectustasi/receipts/labels/agent-support) issues.
+Per-agent guides are welcome: pick your agent from the [`agent-support`](https://github.com/effectustasi/agent-receipts/labels/agent-support) issues.
 
 ## Benchmark
 
@@ -54,7 +54,7 @@ Want to help build it? Check the issues labeled `benchmark`.
 
 ## Contributing
 
-New skills, translations, install guides for other agents, and benchmark tasks are all welcome. Start with [CONTRIBUTING.md](CONTRIBUTING.md) and the [`good first issue`](https://github.com/effectustasi/receipts/labels/good%20first%20issue) label.
+New skills, translations, install guides for other agents, and benchmark tasks are all welcome. Start with [CONTRIBUTING.md](CONTRIBUTING.md) and the [`good first issue`](https://github.com/effectustasi/agent-receipts/labels/good%20first%20issue) label.
 
 ## License
 

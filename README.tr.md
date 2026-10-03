@@ -36,18 +36,18 @@ ya da kontrol edemediğinde:
 **Claude Code**
 
 ```
-/plugin marketplace add effectustasi/receipts
+/plugin marketplace add effectustasi/agent-receipts
 /plugin install receipts@receipts
 ```
 
 **Diğer agent'lar** (Codex, Cursor, Copilot, Gemini CLI, OpenCode…)
 
 Skill klasörlerini agent'ının skill dizinine kopyala ya da her `SKILL.md` dosyasının içeriğini `AGENTS.md` veya kurallar dosyana yapıştır.
-Agent'a özel kurulum rehberleri katkıya açık: [`agent-support`](https://github.com/effectustasi/receipts/labels/agent-support) etiketli issue'lara bak.
+Agent'a özel kurulum rehberleri katkıya açık: [`agent-support`](https://github.com/effectustasi/agent-receipts/labels/agent-support) etiketli issue'lara bak.
 
 ## Katkı
 
-Yeni skill'ler, çeviriler, diğer agent'lar için kurulum rehberleri ve benchmark görevleri memnuniyetle karşılanır. [CONTRIBUTING.md](CONTRIBUTING.md) ve [`good first issue`](https://github.com/effectustasi/receipts/labels/good%20first%20issue) etiketiyle başla.
+Yeni skill'ler, çeviriler, diğer agent'lar için kurulum rehberleri ve benchmark görevleri memnuniyetle karşılanır. [CONTRIBUTING.md](CONTRIBUTING.md) ve [`good first issue`](https://github.com/effectustasi/agent-receipts/labels/good%20first%20issue) etiketiyle başla.
 
 ## Lisans
 
