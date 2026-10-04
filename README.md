@@ -63,7 +63,7 @@ codex --ask-for-approval never "Summarize the current instructions."
 
 See the [official Codex instructions documentation](https://developers.openai.com/codex/agent-configuration/agents-md) for discovery order, global versus project scope, and overrides.
 
-**Any other agent** (Codex, Cursor, Copilot, Gemini CLI, OpenCode…)
+**Any other agent** (Cursor, Copilot, Gemini CLI, OpenCode…)
 
 Copy the skill folders into your agent's skills directory, or paste the body of each `SKILL.md` into your `AGENTS.md` or rules file.
 Per-agent guides are welcome: pick your agent from the [`agent-support`](https://github.com/effectustasi/agent-receipts/labels/agent-support) issues.
