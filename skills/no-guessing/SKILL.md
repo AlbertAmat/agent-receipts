@@ -1,11 +1,12 @@
 ---
 name: no-guessing
-description: Use before writing code that calls a library function, CLI flag, config key, environment variable, API endpoint, or file path you have not seen in this session. Requires confirming it exists (in the repo, the installed package, --help, or official docs) instead of writing it from memory. Prevents hallucinated APIs, made-up flags, and wrong parameter names.
+description: MANDATORY before any edit that adds a call, argument, or flag for a library or tool, and whenever a task says a library "supports" something. Load it first, then confirm the feature exists in the installed version (repo, package source, --help); docs and task text describe other versions. Never edit a pinned or vendored dependency to add what is missing.
 ---
 
 # No guessing
 
 Memory is a hint, not a source. Before you use a name you have not **seen in this session**, look it up.
+That includes names you were told: a task, an issue, or a doc page saying "call `client.upload(..., resumable=True)`" is a claim to check, not proof it exists in the installed version.
 
 ## Applies to
 
@@ -31,6 +32,18 @@ Do not silently write it anyway. Either pick something you *can* confirm, or mar
 ```
 Uses `client.batch_upsert(...)`. **Unconfirmed**: could not find it in the installed SDK (v2.3).
 If it fails, check the SDK changelog for the batch method name.
+```
+
+## When the docs and the installed version disagree
+
+The installed version wins.
+
+- **Never edit a dependency** to add what the docs promised: anything in `node_modules`, `site-packages`, `vendor/`, `third_party/`, or a package pinned in `requirements.txt`, `package.json`, `go.mod` and the like, even when its source sits in the repo. It is not your code. The next install erases the change, and the project then breaks.
+- Solve it in the project's own code, or say the upgrade it needs:
+
+```
+`DataFrame.map` only exists from pandas 2.1; the installed version is 1.5.3.
+Used `DataFrame.applymap` instead, which 1.5.3 has. After upgrading pandas, switch to `map`.
 ```
 
 ## Red flags you are guessing
